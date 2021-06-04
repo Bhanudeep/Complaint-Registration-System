@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html>
+    <head>
+        <a target="_blank" href="logo.png">
+            <img src="/static/images/logo.png" alt="Paris" style="width:150px", class="center">
+          </a>
+        <style>
+            img {
+              border: 1px solid #ddd;
+              border-radius: 15px;
+              padding: 5px;
+              width: 150px;
+            }
+            
+            img:hover {
+              box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+            }
+            </style>
+      <title>Report Crime</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/home_style.css') }}">
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link
+        href="https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    </head>
+    <body class="body">
+      
+    
+        <h1 >Report crime</h1>
+        <div class="login-page">
+          <div class="form"> 
+<form action="{{ url_for("submit")}}" method="post">
+  <textarea type="text" id="firstname" name="content" style="width:635px; height:350px;" placeholder="Type here"></textarea>
+  <br>
+  <br>
+
+  <button type="submit" onclick="myFunction()">SUBMIT</button>
+      
+         
+            <br>
+            <br>
+            <a href=goback ><button type="button" >
+              LOGOUT
+            </button></a>
+          </form>
+        </div>
+      </div>
+    </body>
+    <script>
+       function myFunction() {
+  alert("The crime has been reported.");
+}
+    </script>
+  </html>
+</html>
+
