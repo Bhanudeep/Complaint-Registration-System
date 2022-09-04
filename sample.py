@@ -18,8 +18,8 @@ def mail():
    now = datetime.now()
    time=str(now.strftime("%I:%M %p"))
    content = '\nHello, otp for verification is '+OTP 
-   username = "acra35801@gmail.com"
-   password = "acrastar@123"
+   username = "8888888888"
+   password = "********"
    sender = "ACRA"
    recipient = "sathvickganesh54@gmail.com"
    mail = smtplib.SMTP("smtp.gmail.com",587)
